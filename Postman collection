@@ -1,0 +1,37 @@
+https://www.getpostman.com/collections/a589d0fe5b20a473c579
+https://www.getpostman.com/collections/e9f628fdd8c6b391d1f1
+
+
+To get/set var through script
+
+console.log("Hello world....");
+let urlVar = pm.variables.get("url");
+console.log("Value of urlVar is "+urlVar);
+
+pm.variables.set("name","Postman");
+console.log(pm.variables.get("name"));
+
+let globalVar=pm.globals.get("Environment");
+console.log(globalVar);
+
+pm.environment.set("env","Test");
+console.log(pm.environment.get("env"));
+
+to pass value from one api to other:
+console.log(responseBody);
+bodyData=JSON.parse(responseBody);
+value=bodyData.data[2].first_name;
+console.log(value);
+pm.environment.set("username1", value);
+
+to automate authorization:
+bodyData=JSON.parse(responseBody);
+value=bodyData.responseData.accessToken;
+console.log(value);
+pm.environment.set("authToken", value);
+pm.test("Status code is 200", function () {
+    pm.response.to.have.status(200);
+});
+pm.test("Successful POST request", function () {
+    pm.expect(pm.response.code).to.be.oneOf([200,201,202]);
+});
