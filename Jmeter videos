@@ -1,1 +1,16 @@
 https://www.youtube.com/playlist?list=PLhW3qG5bs-L-zox1h3eIL7CZh5zJmci4c
+
+How to create first Jmeter Test
+=========================
+
+Step 1 - Start Jmeter
+
+Step 2 - Create a TestPlan
+
+Step 3 - Create a Thread Group (Users)
+
+Step 4 - Add a Sampler (Http)
+
+Step 5 - Add Listeners
+
+Step 6 - To Run the Test
