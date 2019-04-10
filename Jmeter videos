@@ -14,3 +14,36 @@ Step 4 - Add a Sampler (Http)
 Step 5 - Add Listeners
 
 Step 6 - To Run the Test
+
+Jmeter Beginner Tutorial 3 : Assertions
+=================================
+
+Assertions =  checks on the Response
+
+1. Response Assertion
+
+2. Duration Assertion
+
+3. Size Assertion
+
+4. HTML Assertion
+
+5. XML Assertion
+
+6. XPATH Assertion
+
+Jmeter Beginner Tutorial 4 - Listeners
+================================
+
+listener = elements that gather information about the performance test
+
+used to view results / metrics of the test
+
+latency = time to first byte
+
+1. View Results in Table
+2. View Results Tree
+3. Aggregate Report
+4. Graph Results
+5. Summary Report
+6. Simple Data Writer
