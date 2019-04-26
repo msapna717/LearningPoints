@@ -132,6 +132,9 @@ https://www.swfwmd.state.fl.us/data/ftp/
 Server: ftp.swfwmd.state.fl.us
 User Name: Anonymous
 (use your email address as password)
+ftp://test.rebex.net/
+u-demo
+p-password
 
 If the above site is down you can find more options here:
 https://stackoverflow.com/questions/7...
