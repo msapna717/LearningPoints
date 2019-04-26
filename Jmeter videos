@@ -97,4 +97,50 @@ Step 5 - Add Listeners
 
 Step 6 - Run and validate
 
-===================================================
+=================================================================
+Jmeter Beginner Tutorial 7 - How to run jmeter from Command Line (non GUI mode)
+================================================================
+
+Why to execute non-gui mode ?
+-gui  - consumes more resources / memory
+-gui - not recommended for heavy load testing
+-command line - can be integrated with other systems  -Jenkins/CI …
+
+Step 1 : Goto command line - goto jmeter - bin
+
+Step 2 : Command : 
+
+jmeter -n -t (location of your jmeter test script) -l (location of the result file)
+   
+            -n - non gui mode
+            -t  - location of jmeter script
+            -l  - location of result file
+
+
+jmeter -h  - to get help on jmeter commands 
+
+jmeter -?  - to get information on jmeter command options
+=================================================================
+Jmeter Beginner Tutorial 8 - How to test FTP upload and download
+=================================================================
+
+Step 1 : Add a FTP Request Sampler
+
+Step 2 : Add FTP connection parameters
+
+https://www.swfwmd.state.fl.us/data/ftp/
+Server: ftp.swfwmd.state.fl.us
+User Name: Anonymous
+(use your email address as password)
+
+If the above site is down you can find more options here:
+https://stackoverflow.com/questions/7...
+
+Step 3 : Test a FTP GET and validate (get file from ftp server to local system)
+
+Step 4 : Test a FTP PUT and validate (transfer file from local to ftp server)
+
+
+(FileZilla client is used in this demo for physical validation of file transfer.
+You can use other FTP clients like WinSCP)
+===================================================================
