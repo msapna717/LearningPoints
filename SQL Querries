@@ -1,0 +1,2 @@
+select 'This is SQL Exercise, Practice and Solution';
+SELECT name, city from salesman where city='Paris';
