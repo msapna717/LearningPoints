@@ -24,4 +24,6 @@ SELECT * FROM nobel_win WHERE (SUBJECT='Physics' and YEAR= 1970) union (select *
 SELECT * FROM nobel_win WHERE year= 1970 and  subject NOT IN('Physiology' , 'Economics');
 SELECT * FROM nobel_win WHERE (year< 1971 and  subject='Physiology') UNION (SELECT * FROM nobel_win WHERE year>= 1974 and  subject='Peace' );
 SELECT * FROM nobel_win WHERE WINNER='Johannes Georg Bednorz';
-SELECT * FROM nobel_win WHERE subject not like 'P%'  order by year, winner;
+SELECT * FROM nobel_win WHERE subject not like 'P%'  order by year desc, winner;
+SELECT * FROM nobel_win WHERE year=1970 order by subject desc, winner;
+SELECT * FROM nobel_win WHERE year=1970 ORDER BY CASE WHEN subject IN ('Economics','Chemistry') THEN 1 ELSE 0 END ASC, subject, winner;
