@@ -14,4 +14,4 @@ Select Price as SecondMaxPrice from (SELECT * FROM Products order by Price desc 
 Select * from(SELECT price from products order by price desc limit 10)order by price limit 1;
 
 
-like or not like: %a, a%, %a%, _a%,[abc]%,
+like or not like: %a, a%, %a%, _a%,[abc]%,a_b,--a%, [!abc]%
