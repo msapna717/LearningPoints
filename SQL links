@@ -15,3 +15,25 @@ Select * from(SELECT price from products order by price desc limit 10)order by p
 
 
 like or not like: %a, a%, %a%, _a%,[abc]%,a_b,--a%, [!abc]%
+
+
+Use the IN operator to select all the records where Country is NOT "Norway" and NOT "France".
+Select * from EMP where Country NOT IN ('Norway','France');
+
+SELECT * FROM Products
+WHERE Price BETWEEN 10 AND 20;
+
+SELECT * FROM Products
+WHERE Price NOT BETWEEN 10 AND 20;
+
+SELECT * FROM Products
+WHERE Price BETWEEN 10 AND 20
+AND NOT CategoryID IN (1,2,3);
+
+SELECT * FROM Products
+WHERE ProductName BETWEEN 'Carnarvon Tigers' AND 'Mozzarella di Giovanni'
+ORDER BY ProductName;
+
+SELECT * FROM Products
+WHERE ProductName NOT BETWEEN 'Carnarvon Tigers' AND 'Mozzarella di Giovanni'
+ORDER BY ProductName;
