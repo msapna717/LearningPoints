@@ -27,3 +27,5 @@ SELECT * FROM nobel_win WHERE WINNER='Johannes Georg Bednorz';
 SELECT * FROM nobel_win WHERE subject not like 'P%'  order by year desc, winner;
 SELECT * FROM nobel_win WHERE year=1970 order by subject desc, winner;
 SELECT * FROM nobel_win WHERE year=1970 ORDER BY CASE WHEN subject IN ('Economics','Chemistry') THEN 1 ELSE 0 END ASC, subject, winner;
+SELECT * FROM  item_mast WHERE PRO_PRICE between 200 and 600;
+SELECT AVG(PRO_PRICE) FROM  item_mast WHERE PRO_COM=16;
