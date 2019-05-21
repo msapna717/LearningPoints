@@ -1,2 +1,17 @@
 https://artoftesting.com/interviewSection/sql-queries-for-interview.html
 https://www.testdome.com/testing/sample/8549
+
+2nd max salary
+SELECT name, MAX(salary) AS SecondMaxSalary
+  FROM employee
+ WHERE salary < (SELECT MAX(salary)
+                 FROM employee); 
+                 
+2nd max price              
+Select Price as SecondMaxPrice from (SELECT * FROM Products order by Price desc limit 2) order by Price limit 1;
+
+10th max
+Select * from(SELECT price from products order by price desc limit 10)order by price limit 1;
+
+
+like or not like: %a, a%, %a%, _a%,[abc]%,
