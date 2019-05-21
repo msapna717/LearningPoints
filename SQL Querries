@@ -1,2 +1,10 @@
 select 'This is SQL Exercise, Practice and Solution';
+select 10+15;
+select 10+15-10*4;
 SELECT name, city from salesman where city='Paris';
+SELECT * from customer where grade =200;
+SELECT ord_no, ord_date, purch_amt  from orders where salesman_id = 5001;
+SELECT *  from nobel_win where year = 1970;
+SELECT winner  from nobel_win where year = 1971 and SUBJECT='Literature';
+SELECT YEAR, SUBJECT  from nobel_win where WINNER='Dennis Gabor';
+SELECT WINNER  from nobel_win where SUBJECT='Physics' and year>=1950;
