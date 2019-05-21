@@ -1,5 +1,7 @@
 https://artoftesting.com/interviewSection/sql-queries-for-interview.html
 https://www.testdome.com/testing/sample/8549
+https://www.w3schools.com/sql/sql_exists.asp
+https://www.w3resource.com/sql-exercises/sql-retrieve-from-table.php
 
 2nd max salary
 SELECT name, MAX(salary) AS SecondMaxSalary
