@@ -3,3 +3,4 @@ SELECT orders. ord_no, orders.purch_amt, customer. cust_name  AS Customer, custo
 SELECT customer.cust_name  AS Customer, salesman.name AS Salesman FROM salesman, customer where salesman. salesman_id =customer. salesman_id;
 SELECT customer.cust_name , customer. city, salesman. name , salesman.commission  FROM salesman, customer where commission>.12 AND salesman.salesman_id =customer. salesman_id;
 SELECT customer.cust_name , customer.city AS cust_city, salesman. name AS salesman_name, salesman.city AS salesman_city, salesman.commission  FROM salesman, customer where commission>.12 AND customer. city!=salesman.city AND salesman.salesman_id =customer. salesman_id ;
+SELECT a.ord_no,a.ord_date,a.purch_amt, b.cust_name AS "Customer Name", b.grade, c.name AS "Salesman", c.commission FROM orders a INNER JOIN customer b ON a.customer_id=b.customer_id INNER JOIN salesman c ON a.salesman_id=c.salesman_id;
