@@ -4,3 +4,6 @@ SELECT customer.cust_name  AS Customer, salesman.name AS Salesman FROM salesman,
 SELECT customer.cust_name , customer. city, salesman. name , salesman.commission  FROM salesman, customer where commission>.12 AND salesman.salesman_id =customer. salesman_id;
 SELECT customer.cust_name , customer.city AS cust_city, salesman. name AS salesman_name, salesman.city AS salesman_city, salesman.commission  FROM salesman, customer where commission>.12 AND customer. city!=salesman.city AND salesman.salesman_id =customer. salesman_id ;
 SELECT a.ord_no,a.ord_date,a.purch_amt, b.cust_name AS "Customer Name", b.grade, c.name AS "Salesman", c.commission FROM orders a INNER JOIN customer b ON a.customer_id=b.customer_id INNER JOIN salesman c ON a.salesman_id=c.salesman_id;
+Write a SQL statement to make a join on the tables salesman, customer and orders in such a form that the same column of each table will appear once and only the relational rows will come
+SELECT * FROM orders NATURAL JOIN customer NATURAL JOIN salesman;
+SELECT a.COM_NAME, b.PRO_NAME, b.PRO_PRICE FROM company_mast a INNER JOIN item_mast b ON a.COM_ID=b.PRO_COM WHERE PRO_PRICE=(SELECT AVG(PRO_PRICE) FROM b. PRO_PRICE);
