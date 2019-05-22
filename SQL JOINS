@@ -1,1 +1,1 @@
-
+SELECT salesman.name AS "Salesman", customer. cust_name  AS "Customer", customer.city AS "City" FROM salesman, customer where salesman.city=customer.city;
