@@ -1,0 +1,11 @@
+steps:
+First of all we need to create a new story(Or we can write test cases for existing story)
+Open your story> From “Create New Test” button you can create multiple test-cases for your story
+Open your test> Here you can add manual steps, precondition for your test.
+Now create test-set> Here you can create/add multiple test cases
+Create test plan> Here you can create/add test-cases and test-sets
+At the end we have to create test execution by clicking on “Create Test Execution” button on Test plan page
+You can create execution “for all tests” or for tests with particular status by selecting “With Status”
+Now open your test execution page> From Play button you can execute your test case (You can add comment, defect and screenshot)
+You Can see overall test execution status from test execution page
+From test plan page you can see the overall test execution status (all executions for that plan)
