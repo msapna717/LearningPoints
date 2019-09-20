@@ -1,6 +1,10 @@
 
 https://www.getpostman.com/collections/e9f628fdd8c6b391d1f1
 
+install npm> then set path in environment var> C:\Program Files\nodejs\
+To the end of your Path variable on the "User variable" section of the Environment Variables on the System Properties.
+npm install -g newman
+newman run mycollection.json
 
 To get/set var through script
 
