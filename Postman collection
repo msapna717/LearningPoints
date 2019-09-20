@@ -35,3 +35,19 @@ pm.test("Status code is 200", function () {
 pm.test("Successful POST request", function () {
     pm.expect(pm.response.code).to.be.oneOf([200,201,202]);
 });
+
+Newman is built on Node.js. To run Newman, make sure you have Node.js installed.
+
+You can download and install Node.js on Linux, Windows, and Mac OSX.
+
+After you install Node.js, Newman is just a command away. Install Newman from npm globally on your system, which allows you to run it from anywhere.
+
+$ npm install -g newman
+The easiest way to run Newman is to run it with a collection. You can run any collection file from your file system.
+
+To learn how to export collections to share as a file, see the collection documentation.
+
+$ newman run mycollection.json
+You can also pass a collection as a URL. For more information, see the documentation for collections to learn how to share a file as a URL.
+
+Your collection probably uses environment variables. To provide an accompanying set of environment variables, export the template from Postman and run them with the -e flag.
